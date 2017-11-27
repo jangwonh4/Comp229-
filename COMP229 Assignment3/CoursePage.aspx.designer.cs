@@ -10,7 +10,7 @@
 namespace COMP229_Assignment3 {
     
     
-    public partial class StudentPage {
+    public partial class CoursePage {
         
         /// <summary>
         /// StudentID control.
@@ -19,7 +19,16 @@ namespace COMP229_Assignment3 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label StudentID;
+        protected global::System.Web.UI.WebControls.HiddenField StudentID;
+        
+        /// <summary>
+        /// label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label1;
         
         /// <summary>
         /// TextBox1 control.
@@ -31,13 +40,13 @@ namespace COMP229_Assignment3 {
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
         
         /// <summary>
-        /// FirstName control.
+        /// label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FirstName;
+        protected global::System.Web.UI.WebControls.Label label2;
         
         /// <summary>
         /// TextBox2 control.
@@ -49,13 +58,13 @@ namespace COMP229_Assignment3 {
         protected global::System.Web.UI.WebControls.TextBox TextBox2;
         
         /// <summary>
-        /// LastName control.
+        /// label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LastName;
+        protected global::System.Web.UI.WebControls.Label label3;
         
         /// <summary>
         /// TextBox3 control.
@@ -76,12 +85,12 @@ namespace COMP229_Assignment3 {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// studentsList control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList studentsList;
+        protected global::System.Web.UI.WebControls.Button Button2;
     }
 }

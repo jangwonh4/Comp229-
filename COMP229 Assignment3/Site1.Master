@@ -14,6 +14,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Page</title>
+    
+    
+    <link href="Content/Custom.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -21,14 +29,10 @@
     <form runat="server">
         
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-default" id="customNavBar">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                    사진
                     <a class="navbar-brand" runat="server" href="~/"><img src="images/CompanyPicture.png" style="width:50px;height:30px;"/></a>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -43,17 +47,15 @@
                         
                 </div>
             </div>
-        </div>
+        </nav>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                <p></p>
-                <p></p>
-                <p></p><p></p><p></p><p></p><p></p><p></p>
+                
             </asp:ContentPlaceHolder>
-            <hr />
-            <div>
+           
+            <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Mingi Jang 300932496</p>
-            </div>
+            </footer>
         </div>
     </form>
 </body>

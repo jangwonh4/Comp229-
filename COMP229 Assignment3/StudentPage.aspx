@@ -6,6 +6,29 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
+    <tr>
+            <td>
+                <asp:Label ID="StudentID" runat="server" Text="Label"></asp:Label>
+            </td>
+            <td colspan="2">
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            </td>
+            <td>
+                <asp:Label ID="FirstName" runat="server" Text="Label"></asp:Label>
+            </td>
+            <td colspan="2">
+                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            </td>
+            <td>
+                <asp:Label ID="LastName" runat="server" Text="Label"></asp:Label>
+            </td>
+            <td colspan="2">
+                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            </td>
+
+        </tr>
+
+    <asp:Button ID="Button1" runat="server" Text="Show Table" OnClick="Button1_Click" />
     <asp:DataList ID="studentsList" runat="server">
         <ItemTemplate>
             <table id="studentTable" runat="server">
