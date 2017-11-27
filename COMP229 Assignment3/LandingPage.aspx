@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="LandingPage.aspx.cs" Inherits="COMP229_Assignment3.LandingPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <p>1</p>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -9,9 +10,8 @@
             
         </h1>
         <p class="lead">All student list</p>
+        <p><a href="StudentPage.aspx" class="btn btn-primary btn-lg">Go to Course page &raquo;</a></p>
 
-
-        <asp:Label ID="lblDisplay" runat="server" ></asp:Label>
     </div>
     <div class="jumbotron">
         <h1>MG Company. Student Page</h1>

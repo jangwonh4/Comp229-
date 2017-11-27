@@ -10,6 +10,15 @@
 namespace COMP229_Assignment3 {
     
     
-    public partial class LandingPage {
+    public partial class StudentPage {
+        
+        /// <summary>
+        /// studentsList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList studentsList;
     }
 }

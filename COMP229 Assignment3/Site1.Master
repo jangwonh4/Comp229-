@@ -34,7 +34,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         
-                        <li><a runat="server" href="~/StudentPage">Student Page</a></li>
+                        <li><a runat="server" href="StudentPage.aspx">Student Page</a></li>
                         <li><a runat="server" href="~/CoursePage">Course Page</a></li>
                         <li><a runat="server" href="~/UpdatePage">Update Page</a></li>
                     </ul>
@@ -46,6 +46,9 @@
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <p></p>
+                <p></p>
+                <p></p><p></p><p></p><p></p><p></p><p></p>
             </asp:ContentPlaceHolder>
             <hr />
             <div>
