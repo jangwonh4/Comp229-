@@ -13,11 +13,21 @@
         <p><a href="StudentPage.aspx" class="btn btn-primary btn-lg">Go to Course page &raquo;</a></p>
 
     </div>
+     <div class="section-title">
+
+		<div class="divider"></div>
+
+	</div>
     <div class="jumbotron">
         <h1>MG Company. Update Page</h1>
         <p class="lead">Student can upload and remove their course this website</p>
         <p><a href="CoursePage.aspx" class="btn btn-primary btn-lg">Go to Course page &raquo;</a></p>
     </div>
+     <div class="section-title">
+
+		<div class="divider"></div>
+
+	</div>
     <div class="jumbotron">
         <h1>MG Company. Student Page</h1>
         <p class="lead">Student can upload and remove their course this website</p>

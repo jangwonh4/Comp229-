@@ -13,6 +13,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="BasicCSS.css" rel="stylesheet" type="text/css">
     <title>Page</title>
     
     
@@ -32,7 +33,7 @@
         <nav class="navbar navbar-default" id="customNavBar">
             <div class="container">
                 <div class="navbar-header">
-                    사진
+                    
                     <a class="navbar-brand" runat="server" href="~/"><img src="images/CompanyPicture.png" style="width:50px;height:30px;"/></a>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -47,12 +48,22 @@
                         
                 </div>
             </div>
+
         </nav>
+         <div class="section-title">
+
+		<div class="divider"></div>
+
+	</div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                
+             
             </asp:ContentPlaceHolder>
-           
+           <div class="section-title">
+
+		<div class="divider"></div>
+
+	</div>
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Mingi Jang 300932496</p>
             </footer>

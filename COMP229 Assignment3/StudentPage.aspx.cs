@@ -13,40 +13,34 @@ namespace COMP229_Assignment3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-            
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
             SqlConnection conn;
             SqlCommand comm;
             SqlDataReader reader;
-
+            // Read the connection string from Web.config
             string connectionString = ConfigurationManager.ConnectionStrings["Students"].ConnectionString;
-
+            // Initialize connection
             conn = new SqlConnection(connectionString);
-
+            // Create command
             comm = new SqlCommand(
-              "SELECT * FROM Student",
+              "SELECT * FROM Students",
               conn);
-
+            // Enclose database code in Try-Catch-Finally
             try
             {
-
+                // Open the connection
                 conn.Open();
-
+                // Execute the command
                 reader = comm.ExecuteReader();
-
+                // Bind the reader to the DataList
                 studentsList.DataSource = reader;
                 studentsList.DataBind();
 
-
+                // Close the reader
                 reader.Close();
             }
             finally
             {
-
+                // Close the connection
                 conn.Close();
             }
         }

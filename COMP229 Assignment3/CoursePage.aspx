@@ -12,19 +12,19 @@
             <td>
                 <asp:Label ID="label1" runat="server" Text="Label"></asp:Label>
             </td>
-            <td colspan="2">
+            <td>
                 <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             </td>
             <td>
                 <asp:Label ID="label2" runat="server" Text="Label"></asp:Label>
             </td>
-            <td colspan="2">
+            <td>
                 <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             </td>
             <td>
                 <asp:Label ID="label3" runat="server" Text="Label"></asp:Label>
             </td>
-            <td colspan="2">
+            <td>
                 <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
             </td>
 
