@@ -40,8 +40,8 @@
                     <ul class="nav navbar-nav">
                         
                         <li><a runat="server" href="StudentPage.aspx">Student Page</a></li>
-                        <li><a runat="server" href="~/CoursePage">Course Page</a></li>
-                        <li><a runat="server" href="~/UpdatePage">Update Page</a></li>
+                        <li><a runat="server" href="CoursePage.aspx">Course Page</a></li>
+                        <li><a runat="server" href="UpdatePage.aspx">Update Page</a></li>
                     </ul>
                    
                         
