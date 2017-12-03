@@ -32,7 +32,7 @@
     </asp:DataList>
 
     <div class="container margin" >
-         <h3 class="margin" >Enter New Student Details</h3>
+         <h3 class="margin" >Register New Student</h3>
             <div class="row">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-3">
@@ -58,7 +58,7 @@
                 <div class="col-sm-3"></div>
             </div>
 
-            <div class="row " style="margin-top:2%">
+            <div class="row " >
                 
                 <div class="col-sm-4"></div>
                 <div class="col-sm-2">
