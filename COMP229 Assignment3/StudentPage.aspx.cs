@@ -11,9 +11,20 @@ namespace COMP229_Assignment3
 {
     public partial class StudentPage : System.Web.UI.Page
     {
+        private SqlConnection conn = new SqlConnection("Server=LAPTOP-FPSD9HOC;Database=Comp229Assign03;Integrated Security=True;");
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection conn;
+
+            if (!IsPostBack)
+            {
+                ShowStudentsName();
+            }
+           
+        }
+
+        public void ShowStudentsName()
+        {
+            
             SqlCommand comm;
             SqlDataReader reader;
             // Read the connection string from Web.config
@@ -44,5 +55,35 @@ namespace COMP229_Assignment3
                 conn.Close();
             }
         }
+        protected void btnDone_Click(object sender, EventArgs e)
+        {
+            SqlCommand InsertName = new SqlCommand("INSERT INTO Comp229Assign03.[dbo].Students ( FirstMidName, LastName, EnrollmentDate) VALUES(@FirstName, @LastName, @EnrollmentDate); ", conn);
+
+            //LabelFirstName.Text = "Test";
+            InsertName.Parameters.Add("@FirstName", System.Data.SqlDbType.VarChar);
+            InsertName.Parameters["@FirstName"].Value = BoxFName.Text;
+
+            InsertName.Parameters.Add("@LastName", System.Data.SqlDbType.VarChar);
+            InsertName.Parameters["@LastName"].Value = BoxLName.Text;
+
+            InsertName.Parameters.Add("@EnrollmentDate", System.Data.SqlDbType.Date);
+            InsertName.Parameters["@EnrollmentDate"].Value = DateTime.Now;
+
+
+            try
+            {
+                conn.Open();
+                InsertName.ExecuteNonQuery();
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            ShowStudentsName();
+
+        }
+
+
     }
 }

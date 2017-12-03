@@ -13,7 +13,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link href="BasicCSS.css" rel="stylesheet" type="text/css">
+    <link href="Contents/BasicCSS.css" rel="stylesheet" type="text/css">
     <title>Page</title>
     
     
@@ -34,7 +34,7 @@
             <div class="container">
                 <div class="navbar-header">
                     
-                    <a class="navbar-brand" runat="server" href="~/"><img src="images/CompanyPicture.png" style="width:50px;height:30px;"/></a>
+                    <a class="navbar-brand" runat="server" href="LandingPage.aspx"><img src="images/CompanyPicture.png" style="width:50px;height:30px;"/></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">

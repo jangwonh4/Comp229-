@@ -4,20 +4,18 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-   <div class="row" >
-
-    <div class="col-md-4">
-
-        <asp:DataList ID="coursesList" runat="server">
-                    <HeaderTemplate>
-                <h1>Course </h1>
-            </HeaderTemplate>
+    <ul>
+        <asp:Repeater ID="myRepeater" runat="server" OnItemCommand="myRepeater_ItemCommand" >
             <ItemTemplate>
-                <p><%# Eval("Title")%> </p>
+                <li>
+                    
+                    <span id="class"><%# Eval("Title") %></span>
+                    <asp:Button runat="server" Text="Update" CommandName="updateCommand" CommandArgument='<%# Eval("Title") %>' />
+                    <asp:Button runat="server" Text="Delete" CommandName="deleteCommand" CommandArgument='<%# Eval("CourseID") %>' />
+                </li>
             </ItemTemplate>
-        </asp:DataList>
-    </div>
-</div>
+        </asp:Repeater>
+    </ul>    
 
  <asp:Button ID="Button1" runat="server" Text="Update" />
     <asp:Button ID="Button2" runat="server" Text="Delete" />

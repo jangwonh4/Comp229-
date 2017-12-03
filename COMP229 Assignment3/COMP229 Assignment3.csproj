@@ -76,7 +76,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BasicCSS.css" />
+    <Content Include="Contents\BasicCSS.css" />
     <Content Include="CoursePage.aspx" />
     <Content Include="LandingPage.aspx" />
     <Content Include="StudentPage.aspx" />
